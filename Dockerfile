@@ -14,7 +14,7 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 USER root
 
 #RUN apt-get -y install htop
-RUN pip install yolo
+RUN pip install yolo label-studio
 
 # 3) install packages using notebook user
 USER jovyan
