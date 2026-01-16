@@ -13,6 +13,13 @@ label-studio start
 
 Then access it at http://datahub.ucsd.edu/hub/user-redirect/proxy/8080
 
+## How to reset DB
+
+```
+rm -rf .local/share/label-studio/
+rm -rf .config/label-studio
+```
+
 ## Ultralytics
 
 Select a notebook with a GPU to use CUDA hardware acceleration.
