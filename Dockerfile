@@ -29,7 +29,7 @@ RUN "${CONDA_DIR}/envs/${ENVNAME}/bin/python" -m ipykernel install --prefix /opt
     fix-permissions "/home/${NB_USER}"
 
 RUN "${CONDA_DIR}/envs/${ENVNAME}/bin/pip" install --no-cache-dir \
-    label-studio==1.21.0 \
+    label-studio \
     "numpy<2"
 
 # 3) install packages using notebook user
