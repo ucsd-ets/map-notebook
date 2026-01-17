@@ -6,13 +6,13 @@ https://education.sdsc.edu/studenttech/map-home/
 
 ## Configure Conda
 
-Open the terminal and create a file named `.profile` in the home directory. This automatically loads the `~/.bashrc` file in future terminals.
+Open the terminal and create a file named `.profile` in the home directory. This automatically loads the `.bashrc` file in future terminals.
 
 ```
 source ~/.bashrc
 ```
 
-Initialize conda environment.
+Initialize conda environment. This adds a script to `.bashrc` to configure Conda.
 
 ```
 mamba init
