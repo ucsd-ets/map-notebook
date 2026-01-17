@@ -46,7 +46,9 @@ RUN "${CONDA_DIR}/envs/${ENVNAME}/bin/python" -m ipykernel install --prefix /opt
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 
-RUN conda install -y -c pytorch -c nvidia -c conda-forge \
+RUN conda install -y \
+    --prefix /opt/conda --name="${ENVNAME}" \
+    -c pytorch -c nvidia -c conda-forge \
     pytorch \
     torchvision \
     pytorch-cuda=11.8 \
