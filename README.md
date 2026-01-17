@@ -6,9 +6,21 @@ https://education.sdsc.edu/studenttech/map-home/
 
 Open a new terminal and run:
 
+Create `~/.profile`.
+
+```
+source ~/.bashrc
+```
+
+Initialize conda environment.
+
 ```
 mamba init
-source ~/.bashrc
+```
+
+Restart the terminal or run `source ~/.bashrc`. Then activate the `label-studio` environment and start Label Studio.
+
+```
 mamba activate /opt/conda/envs/label-studio
 export LABEL_STUDIO_HOST=https://datahub.ucsd.edu/user/$USER/proxy/8080
 export CSRF_TRUSTED_ORIGINS=https://datahub.ucsd.edu
