@@ -7,7 +7,9 @@ https://education.sdsc.edu/studenttech/map-home/
 Open a new terminal and run:
 
 ```
-# mamba activate /opt/conda/envs/label-studio
+mamba init
+source ~/.bashrc
+mamba activate /opt/conda/envs/label-studio
 export LABEL_STUDIO_HOST=https://datahub.ucsd.edu/user/$USER/proxy/8080
 label-studio start
 ```
