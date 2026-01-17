@@ -6,9 +6,7 @@ https://education.sdsc.edu/studenttech/map-home/
 
 ## Configure Conda
 
-Open a new terminal and run:
-
-Create `~/.profile`.
+Open a new terminal and create the `~/.profile` file that will source the `~/.bashrc` file:
 
 ```
 source ~/.bashrc
