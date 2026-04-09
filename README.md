@@ -72,19 +72,23 @@ results = model("https://ultralytics.com/images/bus.jpg")
 success = model.export(format="onnx")
 ```
 
-# Account Reset
+# Notebook Reset
 
-If you mess up your environment it be caused by running out of disk space or installing Python packages.
+If you can't start your notebook it could be caused by running out of disk space or installing Python packages that conflict w/the Jupyter notebook.
 
 You can reset python like this:
 
+```
 ssh USERNAME@dsmlp-login.ucsd.edu
 workspace -c ORG_MAP
 mv .local .local.backup
+```
 
-You can free up space:
+You can free up space like this:
 
+```
 ssh USERNAME@dsmlp-login.ucsd.edu
 workspace -c ORG_MAP
 du -h -d 1
 rm BIG_FILE
+```
