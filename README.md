@@ -71,3 +71,20 @@ results = model("https://ultralytics.com/images/bus.jpg")
 # Export the model to ONNX format
 success = model.export(format="onnx")
 ```
+
+# Account Reset
+
+If you mess up your environment it be caused by running out of disk space or installing Python packages.
+
+You can reset python like this:
+
+ssh USERNAME@dsmlp-login.ucsd.edu
+workspace -c ORG_MAP
+mv .local .local.backup
+
+You can free up space:
+
+ssh USERNAME@dsmlp-login.ucsd.edu
+workspace -c ORG_MAP
+du -h -d 1
+rm BIG_FILE
